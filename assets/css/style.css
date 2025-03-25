@@ -1,0 +1,113 @@
+:root {
+    --animation-duration: 10s;
+    
+    --color-card: hsl(208, 96%, 43%);
+    --color-boton: hsl(217, 96%, 17%);
+    --color-text: hsl(0, 0%, 15%);
+    --text-color: hsl(0, 0%, 98%);
+    --bg-color: hsl(0, 0%, 100%);
+    --transition: 0.4s, background-color 0.2s ease-in-out;
+    --transition2: all 2s ease;
+    --primary-color: hsl(196, 100%, 25%);
+    --border-radius: 2.5rem;
+    --second-color: #fd8f44;
+    --dark: #110070;
+    --lighther-green: #76ABAE;
+    --gradient-blue: linear-gradient(145deg, rgb(0, 0, 0) 10%, rgb(0, 5, 36) 90%);
+    --text-gradient: linear-gradient(348deg, rgba(34,31,25,0.5718662464985995) 47%, rgba(253,143,68,1) 100%);
+}
+
+body.dark {
+    --bg-color: hsl(0, 0%, 15%);
+    --color-text: hsl(0, 0%, 98%);
+}
+
+/* Sección Portafolio */
+.portafolio {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: var(--bg-color);
+}
+
+.portafolio__title {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+/* Contenedor de tarjetas */
+.portafolio__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Tarjetas del portafolio */
+.card {
+    width: 300px;
+    background: var(--bg-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Imagen de las tarjetas */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+/* Texto de las tarjetas */
+.card h3 {
+    color: var(--color-text);
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.card p {
+    color: var(--color-text);
+    font-size: 1rem;
+    padding: 0 15px 15px;
+}
+
+/* Botón "Ver más" */
+.card__btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-color);
+    background: var(--color-boton);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.card__btn:hover {
+    background: var(--color-card);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .portafolio__title {
+        font-size: 2rem;
+    }
+
+    .card {
+        width: 90%;
+    }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Alfawin</title>
+    <link rel="shortcut icon" href="assets/images/icon.jpeg" type="image/x-icon">
+    
+    <!-- Fuentes y Estilos -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"
+        integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" type="text/css" />
+    
+    <!-- Iconos -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="modules.js" type="module"></script>
+    
+    <!-- Archivos CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/carrucel.css">
+    <link rel="stylesheet" href="./assets/css/hero.css">
+    <link rel="stylesheet" href="./assets/css/skills.css">
+    <link rel="stylesheet" href="./assets/css/portafolio.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <link rel="stylesheet" href="./assets/css/contac.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/animation.css">
+    <link rel="stylesheet" href="./assets/css/portac.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header blur">
+        <a href="#" class="header__link">
+            <img class="header__img" src="assets/images/icon.jpg" alt="Logo">
+            <h2 class="header__texto">LE<span class="title__span">BV</span></h2>
+        </a>
+        <nav class="menu nav">
+            <ul class="menu__list panel">
+                <li class="menu__item"><a class="menu__link active" href="#hero">Inicio</a></li>
+                <li class="menu__item"><a class="menu__link" href="#about">Sobre mí</a></li>
+                <li class="menu__item"><a class="menu__link" href="#portafolio">Portafolio</a></li>
+                <li class="menu__item"><a class="menu__link" href="https://alfawin25.github.io/Blog-L/" target="_blank">Blog</a></li>
+                <li class="menu__item"><a class="menu__link" href="#contac">Contacto</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger hamburger--spring" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Hero -->
+        <section class="hero" id="hero">
+            <div class="hero__container">
+                <div class="hero__header">
+                    <div class="hero__text">
+                        <h1 class="hero__title">Luis Enrique <span class="title__span">Bustamante Valencia</span></h1>
+                        <h2 class="hero__description">Desarrollador de software</h2>
+                    </div>
+                    <img class="hero__img" src="assets/images/foto.jpg" alt="Foto de perfil">
+                </div>
+            </div>
+        </section>
+         <!-- Carrusel de Tecnologías -->
+         <section class="carousel">
+            <div class="carousel__wrapper">
+                <div class="carousel__track">
+                    <img src="assets/images/logos/javascript.png" alt="JavaScript">
+                    <img src="assets/images/logos/html.png" alt="HTML">
+                    <img src="assets/images/logos/css.png" alt="CSS">
+                    <img src="assets/images/logos/react.png" alt="ReactJS">
+                    <img src="assets/images/logos/node.png" alt="Node.js">
+                    <img src="assets/images/logos/github.jpg" alt="GitHub">
+                    <img src="assets/images/logos/php.png" alt="PHP">
+                    <img src="assets/images/logos/figma.png" alt="Figma">
+                    <img src="assets/images/logos/python.png" alt="Python">
+                    <img src="assets/images/logos/java.png" alt="Java">
+                    <img src="assets/images/logos/linux.png" alt="Linux">
+                    <img src="assets/images/logos/excel.png" alt="Excel">
+                    <img src="assets/images/logos/unity.png" alt="Unity">
+                    <img src="assets/images/logos/word.png" alt="Word">
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about" id="about">
+            <div class="about__container">
+                <h2 class="about__title">Sobre mí</h2>
+                <p class="about__description">
+                    Soy ingeniero en computación egresado de la UAEMéx. Mi formación académica y experiencia práctica 
+                    me han permitido desarrollar habilidades en diversas tecnologías, con un enfoque en el desarrollo web y análisis de datos.
+                    Con Dominio de: 
+                    JavaScript, HTML, CSS, ReactJS Node.JS, GitHub, PHP, Figma, Python, Java, R, Linux, Excel, Unity y Word
+                </p>
+            </div>
+        </section>
+
+        <!-- Portafolio -->
+        <section class="portafolio" id="portafolio">
+            <h2 class="portafolio__title">Portafolio</h2>
+            <div class="portafolio__container"></div>
+            <a href="portafolio.html" class="card__btn">Ver más</a>
+        </section>
+
+        <!-- Contacto -->
+        <section class="contact" id="contac">
+            <h2 class="contact__title">Contacto</h2>
+            <form class="form" action="#">
+                <label class="form__label" for="name">Nombre</label>
+                <input class="form__input" id="name" type="text" name="name" placeholder="Tu nombre">
+                <label class="form__label" for="email">Correo electrónico</label>
+                <input class="form__input" id="email" type="email" name="email" placeholder="Tu correo">
+                <label class="form__label" for="mensaje">Mensaje</label>
+                <textarea class="form__textarea" id="mensaje" name="mensaje" placeholder="Tu mensaje"></textarea>
+                <input class="form__btn" type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer__texto">© 2025 LUIS - Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./assets/controllers/portafolio.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Luis Enrique Bustamante Valencia</title>
+    <link rel="shortcut icon" href="assets/images/icon.jpeg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="./assets/controllers/porta.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/hero.css" />
+    <link rel="stylesheet" href="./assets/css/portafolio.css" />
+    <link rel="stylesheet" href="./assets/css/porta.css" />
+    <link rel="stylesheet" href="./assets/css/about.css" />
+    <link rel="stylesheet" href="./assets/css/contac.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/animation.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--header-->
+    <header class="header blur">
+        <a href="#" class="header__link">
+            <img class="header__img" src="assets/images/icon.jpeg" alt="Logo">
+            <h2 class="header__texto">LE<span class="title__span">BV</h2>
+        </a>
+        <nav class="menu nav">
+            <ul class="menu__list panel">
+                <li class="menu__item"><a class="menu__link active" href="./index.html">Inicio</a></li>
+                <li class="menu__item"><a class="menu__link" href="index.html#about">Sobre mí</a></li>
+                <li class="menu__item"><a class="menu__link" href="https://alfawin25.github.io/Blog-L/" target="_blank">Blog</a></li>
+                <li class="menu__item"><a class="menu__link" href="https://github.com/Alfawin25" target="_blank">Mi GitHub</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger hamburger--spring" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </header>
+
+    <!--main-->
+    <main>
+        <section class="portafolio" id="portafolio">
+            <h2 class="portafolio__title">Portafolio</h2>
+            <div class="portafolio__skills">
+                <div class="btn__data">
+                    <button class="data__caja active__filter" data-filter="all">All</button>
+                    <button class="data__caja" data-filter="html"><iconify-icon class="data__icon" icon="skill-icons:html"></iconify-icon></button>
+                    <button class="data__caja" data-filter="react"><iconify-icon class="data__icon" icon="skill-icons:react-light"></iconify-icon></button>
+                    <button class="data__caja" data-filter="java"><iconify-icon class="data__icon" icon="devicon:java"></iconify-icon></button>
+                    <button class="data__caja" data-filter="python"><iconify-icon class="data__icon" icon="logos:python"></iconify-icon></button>
+                    <button class="data__caja" data-filter="php"><iconify-icon class="data__icon" icon="skill-icons:php-dark"></iconify-icon></button>
+                    <button class="data__caja" data-filter="cplus"><iconify-icon class="data__icon" icon="logos:c-plusplus"></iconify-icon></button>
+                </div>
+            </div>
+            <div class="portafolio__container">
+                <!-- Filas 3x2 -->
+                <div class="ventanas-row">
+                    <div class="ventana" id="ventana1">
+                        <a href="https://github.com/Alfawin25/RoboTeacher-Java-Unity" target="_blank">
+                            <img src="./assets/images/roboteacher.jpg" alt="Imagen 1">
+                            <h3>ROBOTEACHER</h3>
+                            <p>Un robot maestro que enseña inglés, integrando Unity y Java para una experiencia interactiva.</p>
+                        </a>
+                    </div>
+                    <div class="ventana" id="ventana2">
+                        <a href="https://github.com/Alfawin25/Editor-Grafico-2D-y-3D" target="_blank">
+                            <img src="./assets/images/EditorFormas.jpg" alt="Imagen 2">
+                            <h3>Editor-Grafico-2D-y-3D</h3>
+                            <p>Aplicación en Java para dibujar y manipular gráficos en 2D y 3D, con herramientas interactivas para crear y editar figuras.</p>
+                        </a>
+                    </div>
+                    <div class="ventana" id="ventana3">
+                        <a href="https://github.com/Alfawin25/Analisis-y-Dise-o-De-Redes" target="_blank">
+                            <img src="./assets/images/VLANS.jpg" alt="Imagen 3">
+                            <h3>Analisis de Redes</h3>
+                            <p>Archivos de Cisco Packet Tracer sobre VLANs, DHCP, DNS y paso de mensajes.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="ventanas-row">
+                    <div class="ventana" id="ventana4">
+                        <a href="https://github.com/Alfawin25/Millon-de-Registros-Oracle-con-Python" target="_blank">
+                            <img src="assets/images/millon.png" alt="Imagen 4">
+                            <h3>Millon de registros</h3>
+                            <p>Script en Python que genera 1 millón de registros y los inserta en una base de datos Oracle.</p>
+                        </a>
+                    </div>
+                    <div class="ventana" id="ventana5">
+                        <a href="https://github.com/Alfawin25/Algoritmo-RSA" target="_blank">
+                            <img src="assets/images/RSP.png" alt="Imagen 5">
+                            <h3>RSA</h3>
+                            <p>Método criptográfico que cifra y descifra datos usando pares de claves públicas y privadas.</p>
+                        </a>
+                    </div>
+                    <div class="ventana" id="ventana6">
+                        <a href="https://github.com/Alfawin25/SistemasVentasLB" target="_blank">
+                            <img src="assets/proyectos/sistema-agentes.png" alt="Imagen 6">
+                            <h3>SistemasVentasLB</h3>
+                            <p>Implementación de punto de venta con java y SQLite</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/images/notfound.jpeg" alt="No se encontraron resultados" class="error-image" style="display:none;">
+        </section>
+    </main>
+
+    <!--footer-->
+    <footer class="footer">
+        <div class="footer__container footer__container--logo">
+            <a href="" class="footer__link">
+                <h2 class="footer__texto">LE<span class="title__span">BV</span></h2>
+            </a>
+        </div>
+        <div class="footer__container footer__container--links">
+            <div class="footer_links">
+                <a class="footer__link" href="#">Acerca de mí</a>
+                <a class="footer__link">Contacto</a>
+                <a class="footer__link">Referencias</a>
+                <a class="footer__link">Blog</a>
+            </div>
+        </div>
+        <a href="https://web.whatsapp.com/send?phone=+5217225947253" target="_blank"><iconify-icon class="contact__icon" icon="logos:whatsapp-icon"></iconify-icon></a>
+        <div class="footer__container footer__container--social">
+            <ul class="footer__social--list">
+                <li class="footer__social github"><a href="https://github.com/Alfawin25"><iconify-icon icon="mdi:github" style="color: white"></iconify-icon></a></li>
+                <li class="footer__social"><a href="https://www.linkedin.com/in/luis-enrique-busval"><iconify-icon icon="skill-icons:linkedin"></iconify-icon></a></li>
+                <li class="footer__social"><a href=""><iconify-icon icon="skill-icons:instagram"></iconify-icon></a></li>
+                <li class="footer__social"><a href=""><iconify-icon icon="logos:facebook"></iconify-icon></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="modules.js" type="module"></script>
+    <script src="porta.js"></script>
+</body>
+
+</html>
